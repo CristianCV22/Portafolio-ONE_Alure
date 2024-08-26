@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-primario: #C1CFDA;
+    --color-secundario: #03191E;
+    --color-terciario: #941C2F;
+
+    --fuente-montserrat: "Montserrat", sans-serif;
+    --fuente-krona-one: "Krona One", sans-serif;
+}
+
+body {
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    box-sizing: border-box;
+}
+
+header {
+    padding: 2% 0 0 10%;
+}
+
+nav {
+    display: flex;
+    gap: 80px;
+}
+
+.link {
+    font-family: var(--fuente-montserrat);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-terciario);
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5% 10%;
+    gap: 82px;
+}
+
+.presentacion {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+h1 {
+    font-size: 2.25rem;
+    font-family: var(--fuente-krona-one);
+}
+
+.strongTitle {
+    color: var(--color-terciario);
+}
+
+.presentacion__texto {
+    font-size: 1.5rem;
+    font-family: var(--fuente-montserrat);
+}
+
+.presentacion__enlaces {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.presentacion__enlaces__subtitulo {
+    font-family: var(--fuente-krona-one);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.presentacion__enlaces__link {
+    width: 50%;
+    text-align: center;
+    padding: 21.5px 0;
+    border-radius: 10px;
+    font-family: var(--fuente-montserrat);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-secundario);
+    border: 2px solid var(--color-terciario);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.presentacion__enlaces__link:hover {
+    background-color: var(--color-terciario);
+    color: var(--color-primario);
+}
+
+.imgCamilo {
+    width: 50%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+  
+.imgCamilo:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: var(--color-terciario);
+    padding: 1.5rem;
+    color: var(--color-primario);
+    text-align: center;
+    font-family: var(--fuente-montserrat);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1024px) {
+    header {
+        margin: 10%;
+        padding: 0%;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    main {
+        flex-direction: column-reverse;
+        margin: 5%;
+    }
+
+    .presentacion {
+        width: auto;
+    }
+}
